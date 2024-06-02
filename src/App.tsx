@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 const App = () => {
   const exampleMessages = [
     {
-      heading: 'Learn about',
+      heading: 'Know about',
       subheading: 'Ajinkyatara Fort',
       message: `Tell me about Ajinkyatara Fort in Satara. Include its historical significance and what I can expect when visiting.`
     },
@@ -143,7 +143,7 @@ Make your responses engaging and informative to enhance the user's experience.` 
             </h1>
             {selectedPrompt === '' && (
               <div className="mt-4">
-                <h2 className="text-xl font-semibold">Know About </h2>
+                <h2 className="text-xl font-semibold">Find This  </h2>
                 <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {exampleMessages.map((prompt, index) => (
                     <div
