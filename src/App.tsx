@@ -143,7 +143,7 @@ Make your responses engaging and informative to enhance the user's experience.` 
             </h1>
             {selectedPrompt === '' && (
               <div className="mt-4">
-                <h2 className="text-xl font-semibold">Sample Prompts</h2>
+                <h2 className="text-xl font-semibold">Know About </h2>
                 <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {exampleMessages.map((prompt, index) => (
                     <div
