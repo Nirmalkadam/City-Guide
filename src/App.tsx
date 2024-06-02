@@ -139,11 +139,11 @@ Make your responses engaging and informative to enhance the user's experience.` 
           transition={{ duration: 2 }}>
           <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
             <h1 className="text-5xl md:text-6xl text-center font-semibold">
-              City Guide App
+              City Guide ChatBot
             </h1>
             {selectedPrompt === '' && (
               <div className="mt-4">
-                <h2 className="text-xl font-semibold">Find This  </h2>
+                <h2 className="text-xl font-semibold">Know about Place  </h2>
                 <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {exampleMessages.map((prompt, index) => (
                     <div
