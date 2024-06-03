@@ -59,20 +59,20 @@ const App = () => {
         messages: [
           { role: 'system', content: `You are a Satara City Guide App chatbot designed to provide comprehensive information about all places and attractions in Satara, Maharashtra, India. Your goal is to offer detailed information on each spot, including addresses and Google Map links for easy navigation. Always use the format: Google Map Location (https://www.google.com/maps/search/?api=1&query={location['name']}+{locationCity['Satara'].replace(' ', '+')}) when providing location links.
 
-In addition to basic details, you should suggest the best times to visit, provide information on pricing, expected expenses, and share images when possible. Feel free to offer additional suggestions relevant to the user's query.
-
-Rules:
-
-If asked a question outside the scope of this system prompt, reply with "Not sure."
-Questions about other cities are not allowed. Reply with "Not sure."
-Start responding only when a user inserts a query. Format your responses in markdown for better readability and include emojis where appropriate.
-
-For example:
-
-Historical Sites
-Natural Attractions
-Cultural Experiences
-Make your responses engaging and informative to enhance the user's experience.` },
+          In addition to basic details, you should suggest the best times to visit, provide information on pricing, expected expenses, and share images when possible. Feel free to offer additional suggestions relevant to the user's query.
+          
+          Rules:
+          
+          If asked a question outside the scope of this system prompt, reply with "Not sure."
+          Questions about other cities are not allowed. Reply with "Not sure."
+          Start responding only when a user inserts a query. Format your responses in markdown for better readability and include emojis where appropriate.
+          
+          For example:
+          
+          Historical Sites
+          Natural Attractions
+          Cultural Experiences
+          Make your responses engaging and informative to enhance the user's experience. ` },
           { role: 'user', content: currentInput },
         ],
         model: 'meta-llama/Llama-3-70b-chat-hf',
@@ -137,18 +137,18 @@ Make your responses engaging and informative to enhance the user's experience.` 
         <motion.div className="flex-1 mx-auto max-w-2xl px-4" initial={{ opacity: 0 }}
           animate={{ opacity: 1, translateY: -4 }}
           transition={{ duration: 2 }}>
-          <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
+          <div className="flex flex-col gap-2 rounded-lg border border-yellow-500 bg-background p-8">
             <h1 className="text-5xl md:text-6xl text-center font-semibold">
               City Guide ChatBot
             </h1>
             {selectedPrompt === '' && (
               <div className="mt-4">
-                <h2 className="text-xl font-semibold">Know about Place  </h2>
+                <h2 className="text-xl font-semibold">Know About Places</h2>
                 <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {exampleMessages.map((prompt, index) => (
                     <div
                       key={index}
-                      className="cursor-pointer rounded-lg bg-gray-200 p-4 hover:bg-gray-300"
+                      className="cursor-pointer rounded-lg  bg-[#fde047] p-4 hover:bg-gray-300"
                       onClick={() => handlePromptClick(prompt)}
                     >
                       <h3 className="text-lg font-semibold">
@@ -163,7 +163,7 @@ Make your responses engaging and informative to enhance the user's experience.` 
         </motion.div>
       )}
       <br />
-      <form className="sticky bottom-5 overflow-hidden rounded-lg border bg-opacity-75 backdrop-blur-md focus-within:ring-1 focus-within:ring-ring ">
+      <form className="sticky bottom-5 overflow-hidden rounded-lg border border-yellow-500 bg-opacity-75 backdrop-blur-md focus-within:ring-1 focus-within:ring-ring ">
         <Label htmlFor="message" className="sr-only">
           Message
         </Label>
