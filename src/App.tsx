@@ -124,6 +124,7 @@ const App = () => {
 
   return (
     <div className="relative flex h-full min-h-screen flex-col rounded-xl p-4  lg:col-span-2" data-color-mode={"light"}>
+      <Analytics />
       {source !== '' ? (
         <>
           <Badge className="absolute right-3 top-3">Satara Result</Badge>
